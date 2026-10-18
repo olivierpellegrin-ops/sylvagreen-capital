@@ -257,9 +257,12 @@ export default function Home() {
               </div>
             </div>
             <div className="contact-info">
-              <div className="contact-gerant">
-                <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/olivier%20pellegrin.jpeg" alt="Olivier Pellegrin" width={88} height={88} />
-                <p className="role"><strong>Olivier PELLEGRIN</strong><br />Gérant de SylvaGreen Management</p>
+              <div className="gerant">
+                <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/olivier%20pellegrin.jpeg" alt="Olivier Pellegrin" width={72} height={72} />
+                <div>
+                  <h3 style={{ color: "#fff", marginBottom: 2 }}>Olivier PELLEGRIN</h3>
+                  <p style={{ fontSize: 13.5, color: "#c9d4cc" }}>Gérant de SylvaGreen Management</p>
+                </div>
               </div>
               <div><b>Téléphone</b><a href="tel:+33617793908">06 17 79 39 08</a></div>
               <div><b>E-mail</b><a href="mailto:olivier.pellegrin@sylvagreen.fr">olivier.pellegrin@sylvagreen.fr</a></div>
@@ -269,18 +272,9 @@ export default function Home() {
       </section>
 
       <footer>
-        <div className="wrap footer-inner">
+        <div className="wrap">
           <img className="footer-logo" src={LOGO} alt="SylvaGreen Capital" height={40} />
-          <p style={{ marginTop: 14 }}>
-            © 2026 SylvaGreen Capital — Tous droits réservés.
-          </p>
-          <p className="footer-links">
-            <a href="#top">Haut de page</a>
-            <span>·</span>
-            <a href="mailto:olivier.pellegrin@sylvagreen.fr">Contact</a>
-            <span>·</span>
-            <a href="mailto:olivier.pellegrin@sylvagreen.fr">Mentions légales</a>
-          </p>
+          <p style={{ marginTop: 12 }}>© 2026 SylvaGreen Capital — Tous droits réservés.</p>
         </div>
       </footer>
     </>
