@@ -192,7 +192,7 @@ export default function Home() {
           <h2>Une équipe d&apos;experts, une conviction industrielle</h2>
           <div className="team">
             <div className="member">
-              <img src="/images/olivier-pellegrin.jpg" alt="Olivier Pellegrin" width={88} height={88} />
+              <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/olivier%20pellegrin.jpeg" alt="Olivier Pellegrin" width={88} height={88} />
               <h3>Olivier PELLEGRIN</h3>
               <p className="role"><strong>Co-fondateur — Gérant</strong></p>
               <p className="say">
@@ -201,7 +201,7 @@ export default function Home() {
               </p>
             </div>
             <div className="member">
-              <img src="/images/laurent-casset.jpg" alt="Laurent Casset" width={88} height={88} />
+              <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/laurent%20casset.jpeg" alt="Laurent Casset" width={88} height={88} />
               <h3>Laurent CASSET</h3>
               <p className="role"><strong>Co-fondateur — Expert outils industriels bois-énergie</strong></p>
               <p className="say">« La solution à : nous avons les projets, pas les moyens. »</p>
@@ -213,7 +213,7 @@ export default function Home() {
               </p>
             </div>
             <div className="member">
-              <img src="/images/alain-cochet.jpg" alt="Alain Cochet" width={88} height={88} />
+              <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/alain%20cochet.jpeg" alt="Alain Cochet" width={88} height={88} />
               <h3>Alain COCHET</h3>
               <p className="role"><strong>Co-fondateur — Expert scieries &amp; usines de granulation</strong></p>
               <p className="say">« Connexes mal valorisés, c&apos;est la marge qui part en fumée. »</p>
