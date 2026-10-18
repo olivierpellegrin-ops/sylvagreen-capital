@@ -80,6 +80,12 @@ header { position: sticky; top: 0; z-index: 10; background: rgba(246, 243, 236, 
 .list-card ul { list-style: none; margin-top: 12px; }
 .list-card li { padding: 9px 0 9px 28px; position: relative; font-size: 14.5px; color: var(--muted); border-bottom: 1px solid #f0ece2; }
 .list-card li:last-child { border-bottom: none; }
+.lc-dirigeants { background: var(--forest); border-top: 4px solid var(--leaf); }
+.lc-dirigeants h3 { color: var(--leaf); }
+.lc-dirigeants li { color: #c9d4cc; border-bottom-color: rgba(255, 255, 255, 0.09); }
+.lc-investisseurs { background: #e9f0e4; border-top: 4px solid var(--green); box-shadow: none; }
+.lc-investisseurs h3 { color: var(--green); }
+.lc-investisseurs li { border-bottom-color: rgba(26, 60, 52, 0.1); }
 .list-card li::before { content: ""; position: absolute; left: 4px; top: 14px; width: 9px; height: 9px; border-radius: 50%; background: var(--leaf); }
 
 .team { display: grid; grid-template-columns: 1.1fr 1.1fr 0.8fr; gap: 18px; margin-top: 28px; align-items: stretch; }
@@ -98,7 +104,8 @@ header { position: sticky; top: 0; z-index: 10; background: rgba(246, 243, 236, 
 .contact { background: var(--forest-2); color: #fff; }
 .contact .kicker { color: var(--leaf); }
 .contact h2 { color: #fff; }
-.contact-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; margin-top: 26px; }
+.contact .contact-grid > div > p { margin-top: 14px; }
+.contact-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: start; }
 .contact p { color: #c9d4cc; }
 .contact-info div { margin: 14px 0; font-size: 14.5px; }
 .contact-info b { display: block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
