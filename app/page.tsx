@@ -1,16 +1,12 @@
 export default function Home() {
+  const LOGO = "https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/SylvaGreen%20Capital%20-%20horizontal.png";
+
   return (
     <>
       <header>
         <div className="wrap nav">
-          <a className="brand" href="#top">
-            <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
-              <path d="M17 2 L28 20 L22 20 L29 31 L20 31 L17 24 L14 31 L5 31 L12 20 L6 20 Z" fill="#3f7d5c" />
-              <circle cx="17" cy="14" r="3" fill="#8fbf6f" />
-            </svg>
-            <span>
-              SylvaGreen<small>CAPITAL</small>
-            </span>
+          <a className="brand" href="#top" title="SylvaGreen Capital">
+            <img className="brand-logo" src={LOGO} alt="SylvaGreen Capital" height={44} />
           </a>
           <nav className="nav-links">
             <a href="#fonds">Le fonds</a>
@@ -279,8 +275,11 @@ export default function Home() {
 
       <footer>
         <div className="wrap">
-          <strong>SYLVAGREEN CAPITAL</strong> — Simulation 2027-2036, modèle 30 % capital – 70 %
-          cession-location — document non contractuel.
+          <img className="footer-logo" src={LOGO} alt="SylvaGreen Capital" height={40} />
+          <p style={{ marginTop: 12 }}>
+            <strong>SYLVAGREEN CAPITAL</strong> — Simulation 2027-2036, modèle 30 % capital – 70 %
+            cession-location — document non contractuel.
+          </p>
           <div className="disclaimer">
             Document de communication à destination d&apos;investisseurs qualifiés. Ne constitue
             ni une offre de souscription, ni un conseil en investissement. Chiffres de filière :
