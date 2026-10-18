@@ -82,14 +82,18 @@ header { position: sticky; top: 0; z-index: 10; background: rgba(246, 243, 236, 
 .list-card li:last-child { border-bottom: none; }
 .list-card li::before { content: ""; position: absolute; left: 4px; top: 14px; width: 9px; height: 9px; border-radius: 50%; background: var(--leaf); }
 
-.team { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 30px; max-width: 760px; }
-.member { background: #fff; border-radius: var(--radius); padding: 24px; text-align: center; box-shadow: 0 1px 3px rgba(20, 40, 30, 0.08); }
-.member img { width: 88px; height: 88px; border-radius: 50%; margin: 0 auto 14px; object-fit: cover; }
+.team { display: grid; grid-template-columns: 1.1fr 1.1fr 0.8fr; gap: 18px; margin-top: 28px; align-items: stretch; }
+.member { background: #fff; border-radius: var(--radius); padding: 22px; box-shadow: 0 1px 3px rgba(20, 40, 30, 0.08); }
+.member-head { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+.member-head img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.member-head h3 { margin-bottom: 2px; }
 .member .say { font-style: italic; font-size: 13.5px; color: var(--muted); margin-top: 10px; }
 .role { font-size: 13.5px; }
 .bio { font-size: 13px; margin-top: 8px; }
-.expertise { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 22px; }
-.expertise .card b { color: var(--forest); font-size: 22px; }
+.expertise { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 0; align-content: stretch; }
+.expertise .card { padding: 16px 18px; }
+.expertise .card b { color: var(--forest); font-size: 20px; display: block; }
+.expertise .card p { font-size: 12.5px; }
 
 .contact { background: var(--forest-2); color: #fff; }
 .contact .kicker { color: var(--leaf); }
