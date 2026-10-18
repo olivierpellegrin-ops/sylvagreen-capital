@@ -63,6 +63,7 @@ export default function Home() {
             du projet jusqu&apos;au premier granulé produit. »
             <cite>— Éric Vial, délégué général de Propellet France — Panorama de la production de granulés</cite>
           </blockquote>
+          <div className="band-img" style={{ backgroundImage: "linear-gradient(rgba(14, 38, 32, 0.25), rgba(14, 38, 32, 0.25)), url('https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/stock_ext%C3%A9rieur_bois_rond.jpg')" }}></div>
         </div>
       </section>
 
@@ -168,6 +169,7 @@ export default function Home() {
         <div className="wrap">
           <span className="kicker">Méthode</span>
           <h2>Notre processus d&apos;investissement</h2>
+          <div className="band-img" style={{ backgroundImage: "linear-gradient(rgba(246, 243, 236, 0.35), rgba(246, 243, 236, 0.35)), url('https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/granul%C3%A9s_flux_droite_gauche.jpg')" }}></div>
           <div className="steps">
             <div className="step"><h4>Sourcing</h4><p>Prospection terrain au sein de notre réseau filière</p></div>
             <div className="step"><h4>Due diligence technique</h4><p>Audit machines, marché, approvisionnement, comparables</p></div>
