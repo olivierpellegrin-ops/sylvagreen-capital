@@ -49,6 +49,7 @@ header { position: sticky; top: 0; z-index: 10; background: rgba(246, 243, 236, 
 .fig b { display: block; font-size: 30px; color: var(--leaf); }
 .fig span { font-size: 13px; color: #c9d4cc; }
 
+.band-img { height: 260px; border-radius: var(--radius); background-size: cover; background-position: center; margin-top: 34px; box-shadow: 0 1px 3px rgba(20, 40, 30, 0.1); }
 .band-label { font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); font-weight: 700; margin-bottom: 8px; }
 .quote { border-left: 3px solid var(--leaf); padding: 6px 0 6px 22px; font-style: italic; color: var(--muted); max-width: 760px; }
 .quote cite { display: block; font-style: normal; font-size: 13px; margin-top: 10px; color: var(--forest); }
@@ -111,6 +112,7 @@ footer strong { color: #fff; }
   .steps { grid-template-columns: 1fr 1fr; }
   .phases, .twocol, .contact-grid, .team { grid-template-columns: 1fr; }
   .brand-logo { height: 36px; }
+  .band-img { height: 180px; }
 }
 @media (max-width: 520px) {
   .hero-figs, .stats, .mech, .solutions, .expertise, .steps { grid-template-columns: 1fr; }
