@@ -63,7 +63,7 @@ export default function Home() {
             du projet jusqu&apos;au premier granulé produit. »
             <cite>— Éric Vial, délégué général de Propellet France — Panorama de la production de granulés</cite>
           </blockquote>
-          <div className="band-img" style={{ backgroundImage: "linear-gradient(rgba(14, 38, 32, 0.25), rgba(14, 38, 32, 0.25)), url('https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/stock_ext%C3%A9rieur_bois_rond.jpg')" }}></div>
+          <div className="band-img" style={{ backgroundImage: "linear-gradient(rgba(14, 38, 32, 0.25), rgba(14, 38, 32, 0.25)), url('https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@' )" }}></div>
         </div>
       </section>
 
@@ -257,8 +257,8 @@ export default function Home() {
               </div>
             </div>
             <div className="contact-info">
-              <div className="gerant">
-                <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/olivier%20pellegrin.jpeg" alt="Olivier Pellegrin" width={72} height={72} />
+              <div className="contact-gerant">
+                <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/olivier%20pellegrin.jpeg" alt="Olivier Pellegrin" width={88} height={88} />
                 <div>
                   <h3 style={{ color: "#fff", marginBottom: 2 }}>Olivier PELLEGRIN</h3>
                   <p style={{ fontSize: 13.5, color: "#c9d4cc" }}>Gérant de SylvaGreen Management</p>
@@ -273,8 +273,7 @@ export default function Home() {
 
       <footer>
         <div className="wrap">
-          <img className="footer-logo" src={LOGO} alt="SylvaGreen Capital" height={40} />
-          <p style={{ marginTop: 12 }}>© 2026 SylvaGreen Capital — Tous droits réservés.</p>
+          <p>© 2026 SylvaGreen Capital — Tous droits réservés.</p>
         </div>
       </footer>
     </>
