@@ -142,7 +142,7 @@ export default function Home() {
             </div>
           </div>
           <div className="twocol">
-            <div className="list-card">
+            <div className="list-card lc-dirigeants">
               <h3>Pour les dirigeants de la filière</h3>
               <ul>
                 <li>Un interlocuteur qui parle « séchage, déligneuse, presse à granulés », pas seulement « retour sur capital »</li>
@@ -152,7 +152,7 @@ export default function Home() {
                 <li>Traitement fiscal favorable : loyers et intérêts déductibles du résultat imposable</li>
               </ul>
             </div>
-            <div className="list-card">
+            <div className="list-card lc-investisseurs">
               <h3>Pour les investisseurs</h3>
               <ul>
                 <li>Revenus récurrents dès l&apos;an 1 grâce aux loyers de cession-location (700 k€ sur 10 ans dans notre modèle)</li>
@@ -252,10 +252,10 @@ export default function Home() {
 
       <section className="contact" id="contact">
         <div className="wrap">
-          <span className="kicker">Contact</span>
-          <h2>Parlons de votre projet</h2>
           <div className="contact-grid">
             <div>
+              <span className="kicker">Contact</span>
+              <h2>Parlons de votre projet</h2>
               <p>
                 Investisseur potentiel, propriétaire de forêts ou dirigeant de la filière :
                 première rencontre sans engagement.
