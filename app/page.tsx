@@ -257,7 +257,7 @@ export default function Home() {
               </div>
             </div>
             <div className="contact-info">
-              <div className="contact-gtant">
+              <div className="contact-gerant">
                 <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/olivier%20pellegrin.jpeg" alt="Olivier Pellegrin" width={88} height={88} />
                 <p className="role"><strong>Olivier PELLEGRIN</strong><br />Gérant de SylvaGreen Management</p>
               </div>
