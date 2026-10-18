@@ -82,7 +82,7 @@ header { position: sticky; top: 0; z-index: 10; background: rgba(246, 243, 236, 
 .list-card li:last-child { border-bottom: none; }
 .list-card li::before { content: ""; position: absolute; left: 4px; top: 14px; width: 9px; height: 9px; border-radius: 50%; background: var(--leaf); }
 
-.team { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 30px; }
+.team { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 30px; max-width: 760px; }
 .member { background: #fff; border-radius: var(--radius); padding: 24px; text-align: center; box-shadow: 0 1px 3px rgba(20, 40, 30, 0.08); }
 .member img { width: 88px; height: 88px; border-radius: 50%; margin: 0 auto 14px; object-fit: cover; }
 .member .say { font-style: italic; font-size: 13.5px; color: var(--muted); margin-top: 10px; }
@@ -100,11 +100,19 @@ header { position: sticky; top: 0; z-index: 10; background: rgba(246, 243, 236, 
 .contact-info b { display: block; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
 .contact-info a { color: var(--leaf); text-decoration: none; }
 .contact-info span { color: #c9d4cc; }
+.contact-gerant { display: flex; align-items: center; gap: 16px; margin: 6px 0 18px; }
+.contact-gerant img { width: 88px; height: 88px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(143, 191, 111, 0.5); flex-shrink: 0; }
+.contact-gerant .role { color: #c9d4cc; }
+.contact-gerant .role strong { color: #fff; font-size: 17px; }
 footer { background: var(--forest-2); color: #8fa39a; font-size: 12px; border-top: 1px solid rgba(255, 255, 255, 0.08); }
 footer .wrap { padding: 26px 24px; }
 footer strong { color: #fff; }
 .footer-logo { display: block; height: 40px; width: auto; opacity: 0.9; }
-.disclaimer { border-top: 1px solid rgba(255, 255, 255, 0.08); margin-top: 14px; padding-top: 14px; font-size: 11.5px; line-height: 1.5; }
+.footer-inner { display: flex; flex-direction: column; align-items: flex-start; }
+.footer-links { margin-top: 10px; display: flex; gap: 10px; align-items: center; }
+.footer-links a { color: #8fa39a; text-decoration: none; }
+.footer-links a:hover { color: var(--leaf); }
+.footer-links span { opacity: 0.5; }
 
 @media (max-width: 860px) {
   .nav-links { display: none; }
@@ -116,4 +124,5 @@ footer strong { color: #fff; }
 }
 @media (max-width: 520px) {
   .hero-figs, .stats, .mech, .solutions, .expertise, .steps { grid-template-columns: 1fr; }
+  .contact-gerant { flex-direction: column; text-align: center; }
 }
