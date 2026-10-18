@@ -169,7 +169,6 @@ export default function Home() {
         <div className="wrap">
           <span className="kicker">Méthode</span>
           <h2>Notre processus d&apos;investissement</h2>
-          <div className="band-img" style={{ backgroundImage: "linear-gradient(rgba(246, 243, 236, 0.35), rgba(246, 243, 236, 0.35)), url('https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/granul%C3%A9s_flux_droite_gauche.jpg')" }}></div>
           <div className="steps">
             <div className="step"><h4>Sourcing</h4><p>Prospection terrain au sein de notre réseau filière</p></div>
             <div className="step"><h4>Due diligence technique</h4><p>Audit machines, marché, approvisionnement, comparables</p></div>
@@ -181,6 +180,7 @@ export default function Home() {
             <strong>Équipements financés :</strong> séchoirs · broyeurs · presses à granulés ·
             chaudières biomasse · manutention &amp; stockage
           </p>
+          <div className="band-img" style={{ backgroundImage: "linear-gradient(rgba(246, 243, 236, 0.35), rgba(246, 243, 236, 0.35)), url('https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/granul%C3%A9s_flux_droite_gauche.jpg')" }}></div>
         </div>
       </section>
 
@@ -189,15 +189,6 @@ export default function Home() {
           <span className="kicker">L&apos;équipe · Gouvernance</span>
           <h2>Une équipe d&apos;experts, une conviction industrielle</h2>
           <div className="team">
-            <div className="member">
-              <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/olivier%20pellegrin.jpeg" alt="Olivier Pellegrin" width={88} height={88} />
-              <h3>Olivier PELLEGRIN</h3>
-              <p className="role"><strong>Co-fondateur — Gérant</strong></p>
-              <p className="say">
-                « Du capital patient, doublé d&apos;un savoir-faire opérationnel rare dans le
-                capital-investissement. »
-              </p>
-            </div>
             <div className="member">
               <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/laurent%20casset.jpeg" alt="Laurent Casset" width={88} height={88} />
               <h3>Laurent CASSET</h3>
@@ -266,30 +257,30 @@ export default function Home() {
               </div>
             </div>
             <div className="contact-info">
+              <div className="contact-gtant">
+                <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/olivier%20pellegrin.jpeg" alt="Olivier Pellegrin" width={88} height={88} />
+                <p className="role"><strong>Olivier PELLEGRIN</strong><br />Gérant de SylvaGreen Management</p>
+              </div>
               <div><b>Téléphone</b><a href="tel:+33617793908">06 17 79 39 08</a></div>
               <div><b>E-mail</b><a href="mailto:olivier.pellegrin@sylvagreen.fr">olivier.pellegrin@sylvagreen.fr</a></div>
-              <div><b>Site</b><span>www.sylvagreen-capital.fr</span></div>
-              <div><b>Gérant</b><span>Olivier PELLEGRIN — SylvaGreen Management</span></div>
             </div>
           </div>
         </div>
       </section>
 
       <footer>
-        <div className="wrap">
+        <div className="wrap footer-inner">
           <img className="footer-logo" src={LOGO} alt="SylvaGreen Capital" height={40} />
-          <p style={{ marginTop: 12 }}>
-            <strong>SYLVAGREEN CAPITAL</strong> — Simulation 2027-2036, modèle 30 % capital – 70 %
-            cession-location — document non contractuel.
+          <p style={{ marginTop: 14 }}>
+            © 2026 SylvaGreen Capital — Tous droits réservés.
           </p>
-          <div className="disclaimer">
-            Document de communication à destination d&apos;investisseurs qualifiés. Ne constitue
-            ni une offre de souscription, ni un conseil en investissement. Chiffres de filière :
-            sources professionnelles (2025). Chiffres du fonds : simulation interne sur 10 ans avec
-            cession-location, non contractuelle. Les performances passées ou simulées ne préjugent
-            pas des performances futures. — Document non contractuel — SylvaGreen Capital — 2026.
-            Reproduction interdite.
-          </div>
+          <p className="footer-links">
+            <a href="#top">Haut de page</a>
+            <span>·</span>
+            <a href="mailto:olivier.pellegrin@sylvagreen.fr">Contact</a>
+            <span>·</span>
+            <a href="mailto:olivier.pellegrin@sylvagreen.fr">Mentions légales</a>
+          </p>
         </div>
       </footer>
     </>
