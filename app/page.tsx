@@ -190,9 +190,13 @@ export default function Home() {
           <h2>Une équipe d&apos;experts, une conviction industrielle</h2>
           <div className="team">
             <div className="member">
-              <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/laurent%20casset.jpeg" alt="Laurent Casset" width={88} height={88} />
-              <h3>Laurent CASSET</h3>
-              <p className="role"><strong>Co-fondateur — Expert outils industriels bois-énergie</strong></p>
+              <div className="member-head">
+                <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/laurent%20casset.jpeg" alt="Laurent Casset" width={72} height={72} />
+                <div>
+                  <h3>Laurent CASSET</h3>
+                  <p className="role"><strong>Co-fondateur</strong> — Expert outils industriels bois-énergie</p>
+                </div>
+              </div>
               <p className="say">« La solution à : nous avons les projets, pas les moyens. »</p>
               <p className="bio">
                 30 ans dans la filière bois, en France comme à l&apos;international : conception de
@@ -202,9 +206,13 @@ export default function Home() {
               </p>
             </div>
             <div className="member">
-              <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/alain%20cochet.jpeg" alt="Alain Cochet" width={88} height={88} />
-              <h3>Alain COCHET</h3>
-              <p className="role"><strong>Co-fondateur — Expert scieries &amp; usines de granulation</strong></p>
+              <div className="member-head">
+                <img src="https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/alain%20cochet.jpeg" alt="Alain Cochet" width={72} height={72} />
+                <div>
+                  <h3>Alain COCHET</h3>
+                  <p className="role"><strong>Co-fondateur</strong> — Expert scieries &amp; usines de granulation</p>
+                </div>
+              </div>
               <p className="say">« Connexes mal valorisés, c&apos;est la marge qui part en fumée. »</p>
               <p className="bio">
                 Plus de 30 ans d&apos;expertise en implantation d&apos;usines de granulation :
@@ -212,30 +220,32 @@ export default function Home() {
                 d&apos;unités de production au service des producteurs.
               </p>
             </div>
+            <div className="expertise">
+              <div className="card"><b>60 ans</b><p>d&apos;expertise cumulée, de la 1ère transformation au granulé</p></div>
+              <div className="card"><b>50 projets soutenus</b><p>dans les scieries et les usines de granulation, en France et à l&apos;étranger</p></div>
+              <div className="card"><b>100 M€</b><p>estimation du déficit de financement de la filière française</p></div>
+            </div>
           </div>
-          <div className="expertise">
-            <div className="card"><b>60 ans</b><p>d&apos;expertise cumulée, de la 1ère transformation au granulé</p></div>
-            <div className="card"><b>50 projets soutenus</b><p>dans les scieries et les usines de granulation, en France et à l&apos;étranger</p></div>
-            <div className="card"><b>100 M€</b><p>estimation du déficit de financement de la filière française</p></div>
-          </div>
-          <div className="card" style={{ marginTop: 22 }}>
-            <h3>Notre promesse</h3>
-            <p>
-              Issus de l&apos;industrie du bois, nous investissons uniquement dans des projets que
-              nous comprenons techniquement : modernisation de scieries, valorisation des connexes,
-              usines de granulation, chaudières biomasse. Du capital patient, doublé d&apos;un
-              savoir-faire opérationnel, rare dans le capital-investissement.
-            </p>
-          </div>
-          <div className="card" style={{ marginTop: 22 }}>
-            <h3>Gouvernance</h3>
-            <p>
-              Le fonds sera un fonds professionnel géré par SylvaGreen Management (société de
-              gestion en cours d&apos;agrément AMF), sous la responsabilité d&apos;Olivier
-              PELLEGRIN. Actifs conservés par une banque dépositaire. Les flux d&apos;investisseurs
-              transitent exclusivement par les comptes du fonds : une architecture conforme aux
-              exigences réglementaires, pensée pour la protection des souscripteurs.
-            </p>
+          <div className="twocol" style={{ marginTop: 22 }}>
+            <div className="card">
+              <h3>Notre promesse</h3>
+              <p>
+                Issus de l&apos;industrie du bois, nous investissons uniquement dans des projets que
+                nous comprenons techniquement : modernisation de scieries, valorisation des connexes,
+                usines de granulation, chaudières biomasse. Du capital patient, doublé d&apos;un
+                savoir-faire opérationnel, rare dans le capital-investissement.
+              </p>
+            </div>
+            <div className="card">
+              <h3>Gouvernance</h3>
+              <p>
+                Le fonds sera un fonds professionnel géré par SylvaGreen Management (société de
+                gestion en cours d&apos;agrément AMF), sous la responsabilité d&apos;Olivier
+                PELLEGRIN. Actifs conservés par une banque dépositaire. Les flux d&apos;investisseurs
+                transitent exclusivement par les comptes du fonds : une architecture conforme aux
+                exigences réglementaires, pensée pour la protection des souscripteurs.
+              </p>
+            </div>
           </div>
         </div>
       </section>
