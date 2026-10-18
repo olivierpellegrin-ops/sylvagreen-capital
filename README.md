@@ -17,15 +17,11 @@ npm run dev
 
 Site visible sur http://localhost:3000
 
-## Images attendues dans `public/images/`
+## Portraits de l'équipe
 
-| Fichier | Contenu | Emplacement |
-|---|---|---|
-| `olivier-pellegrin.jpg` | Portrait Olivier Pellegrin | équipe |
-| `laurent-casset.jpg` | Portrait Laurent Casset | équipe |
-| `alain-cochet.jpg` | Portrait Alain Cochet | équipe |
+Les 3 portraits (`olivier pellegrin.jpeg`, `laurent casset.jpeg`, `alain cochet.jpeg`) sont stockés **à la racine du dépôt** et servis via le CDN jsDelivr (`cdn.jsdelivr.net/gh/...`).
 
-(*Le site fonctionne sans ces fichiers ; prévoir un fallback ou les ajouter prochainement.*)
+> **Migration possible plus tard :** pour les servir localement, glisser les 3 fichiers dans `public/images/` (upload web GitHub) et remplacer dans `app/page.tsx` les URLs `cdn.jsdelivr.net/...` par `/images/<nom>.jpeg`.
 
 ## Déploiement sur Vercel (gratuit)
 
@@ -40,6 +36,7 @@ app/
   layout.tsx      — structure HTML + métadonnées SEO
   globals.css     — thème et styles
   page.tsx        — page unique, toutes les sections
+*.jpeg            — portraits de l'équipe (racine, servis via CDN)
 ```
 
 ## Contact
