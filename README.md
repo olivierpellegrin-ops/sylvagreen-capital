@@ -41,4 +41,4 @@ app/
 
 ## Contact
 
-Olivier PELLEGRIN — gérant de SylvaGreen Management — olivier.pellegrin@sylvagreen.fr
+Olivier PELLEGRIN — gérant de SylvaGreen Management — olivier.pellegrin@sylvagreen.consulting (temporaire, en attendant @sylvagreen.fr)
