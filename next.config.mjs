@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
-const repo = process.env.GITHUB_REPOSITORY || 'olivierpellegrin-ops/sylvagreen-capital';
-
+// Site servi à la racine du domaine personnalisé www.sylvagreen-capital.fr
+// (basePath nécessaire uniquement pour l'URL projet olivierpellegrin-ops.github.io/sylvagreen-capital/ —
+// dans ce cas, définir BASE_PATH=sylvagreen-capital au build)
 const nextConfig = {
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/' + repo.split('/')[1] : '',
+  basePath: process.env.BASE_PATH ? '/' + process.env.BASE_PATH : '',
   images: { unoptimized: true },
 };
 
