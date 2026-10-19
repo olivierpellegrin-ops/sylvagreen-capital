@@ -261,7 +261,7 @@ export default function Home() {
                 première rencontre sans engagement.
               </p>
               <div style={{ marginTop: 26 }}>
-                <a className="btn btn-primary" href="mailto:olivier.pellegrin@sylvagreen.consulting">
+                <a className="btn btn-primary" href="https://olivierpellegrin-sylvagre.zohobookings.eu" target="_blank" rel="noopener">
                   Prendre rendez-vous
                 </a>
               </div>
