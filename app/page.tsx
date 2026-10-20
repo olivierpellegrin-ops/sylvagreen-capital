@@ -275,7 +275,7 @@ export default function Home() {
                 </div>
               </div>
               <div><b>Téléphone</b><a href="tel:+33617793908">06 17 79 39 08</a></div>
-              <div><b>E-mail</b><a href="mailto:olivier.pellegrin@sylvagreen.consulting">olivier.pellegrin@sylvagreen.consulting</a></div>
+              <div><b>E-mail</b><a href="mailto:olivier.pellegrin@sylvagreen-capital.fr">olivier.pellegrin@sylvagreen-capital.fr</a></div>
             </div>
           </div>
         </div>
