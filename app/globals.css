@@ -137,3 +137,86 @@ footer strong { color: #fff; }
   .hero-figs, .stats, .mech, .solutions, .expertise, .steps { grid-template-columns: 1fr; }
   .contact-gerant { flex-direction: column; text-align: center; }
 }
+
+/* ================= Site v2 — multi-pages ================= */
+
+.nav-rdv {
+  background: var(--leaf);
+  color: var(--forest-2) !important;
+  padding: 8px 16px !important;
+  border-radius: 999px;
+  font-weight: 700;
+  opacity: 1 !important;
+}
+
+.hero-short .wrap { padding-top: 84px; padding-bottom: 84px; }
+
+.doors { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 34px; }
+.door { border-radius: var(--radius); padding: 34px 30px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.door h3 { font-size: 21px; }
+.door p { font-size: 15px; max-width: 440px; }
+.door .btn { margin-top: 10px; }
+.door-label { display: inline-block; font-size: 11.5px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; margin-bottom: 4px; }
+.door-ben { background: #e9f0e4; border-top: 4px solid var(--green); box-shadow: 0 1px 3px rgba(20, 40, 30, 0.08); }
+.door-ben h3 { color: var(--forest); }
+.door-ben .door-label { color: var(--green); }
+.door-inv { background: var(--forest); box-shadow: 0 1px 3px rgba(20, 40, 30, 0.12); }
+.door-inv h3 { color: #fff; }
+.door-inv p { color: #c9d4cc; }
+.door-inv .door-label { color: var(--leaf); }
+
+.fig-inv { background: var(--forest); border-radius: var(--radius); padding: 20px 22px; }
+.fig-inv b { display: block; font-size: 28px; color: var(--leaf); }
+.fig-inv span { font-size: 13px; color: #c9d4cc; }
+
+.teaser { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 26px; }
+.teaser .card b { display: block; font-size: 26px; color: var(--forest); }
+.teaser .card p { font-size: 14px; margin: 6px 0 10px; }
+.teaser .card a { color: var(--green); text-decoration: none; font-weight: 600; font-size: 14px; }
+.teaser .card a:hover { color: var(--forest); }
+
+.mission-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 22px; margin-top: 30px; align-items: stretch; }
+.mission-txt { background: #fff; border-radius: var(--radius); padding: 26px; box-shadow: 0 1px 3px rgba(20, 40, 30, 0.08); }
+.mission-img { min-height: 260px; border-radius: var(--radius); background-size: cover; background-position: center; box-shadow: 0 1px 3px rgba(20, 40, 30, 0.1); }
+
+.sol .sit { margin-top: 14px; background: rgba(143, 191, 111, 0.12); border-left: 3px solid var(--leaf); border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 13.5px; font-style: italic; color: #c9d4cc; }
+.sol .sit b { font-style: normal; color: #fff; }
+
+.scen-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 30px; }
+.scen { background: #fff; border-radius: var(--radius); overflow: hidden; box-shadow: 0 1px 3px rgba(20, 40, 30, 0.08); display: flex; flex-direction: column; }
+.scen img { width: 100%; height: 220px; object-fit: cover; display: block; }
+.scen .in { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+.scen .who { font-size: 11.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+.scen h3 { margin: 4px 0 8px; }
+.scen p { font-size: 14.5px; }
+.scen .res { margin-top: auto; background: #e9f0e4; border-radius: 10px; padding: 12px 16px; font-size: 14px; }
+.scen .res b { color: var(--forest); }
+
+.lc-benefices { background: var(--forest); border-top: 4px solid var(--leaf); }
+.lc-benefices h3 { color: var(--leaf); }
+.lc-benefices li { color: #c9d4cc; border-bottom-color: rgba(255, 255, 255, 0.09); }
+.steps-list { list-style: none; margin-top: 14px; counter-reset: parcours; }
+.steps-list li { counter-increment: parcours; position: relative; padding: 10px 0 10px 36px; font-size: 14.5px; color: var(--muted); border-bottom: 1px solid #f0ece2; }
+.steps-list li:last-child { border-bottom: none; }
+.steps-list li::before { content: counter(parcours); position: absolute; left: 0; top: 10px; width: 24px; height: 24px; border-radius: 50%; background: var(--leaf); color: var(--forest-2); font-weight: 800; font-size: 13px; display: flex; align-items: center; justify-content: center; }
+.steps-list li b { color: var(--forest); }
+
+.gov-team { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 30px; }
+.checklist { list-style: none; margin-top: 12px; }
+.checklist li { padding: 8px 0 8px 26px; position: relative; font-size: 14.5px; color: var(--muted); }
+.checklist li::before { content: "✔"; position: absolute; left: 0; color: var(--green); }
+
+.page-beneficiaires {
+  --forest: #2e4a36;
+  --forest-2: #243c2c;
+  --green: #4a6b52;
+  --leaf: #a9c4a4;
+  --gold: #b8894a;
+  background: #f4f7f1;
+}
+
+.footer-copy { margin-top: 10px; }
+
+@media (max-width: 860px) {
+  .doors, .teaser, .mission-grid, .scen-grid, .gov-team { grid-template-columns: 1fr; }
+}
