@@ -90,7 +90,7 @@ export default function Home() {
           <p className="lead" style={{ maxWidth: 760 }}>
             <strong>Les scieries manquent de capitaux.</strong> Séchoirs vétustes, broyeurs
             obsolètes, connexes sous-valorisés : la première transformation sous-investit, quand
-            les granuleurs cherchent une ressource locale sécurisée. <strong>Notre mission :</strong>{" "}
+            les granulateurs cherchent une ressource locale sécurisée. <strong>Notre mission :</strong>{" "}
             financer la modernisation, l&apos;innovation et la valorisation de la première
             transformation du bois.
           </p>
