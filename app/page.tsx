@@ -20,7 +20,7 @@ export default function Home() {
       <section id="cibles">
         <div className="wrap">
           <span className="kicker">Deux promesses, un même fonds</span>
-          <h2>Vous êtes…</h2>
+          <h2>Quel est votre projet ? Investir ou financer ?</h2>
           <p className="lead">
             Un même fonds, une même équipe, une même conviction : la filière bois française
             mérite des capitaux patients et compétents. Choisissez votre porte.
