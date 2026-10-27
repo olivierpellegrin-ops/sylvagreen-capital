@@ -13,7 +13,7 @@ const CDN = "https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital
 export default function Gouvernance() {
   return (
     <main>
-      <div className="hero hero-short" id="top">
+      <div className="hero hero-short" id="top" style={{ background: "linear-gradient(160deg, rgba(14, 38, 32, 0.92) 0%, rgba(26, 60, 52, 0.68) 50%, rgba(14, 38, 32, 0.88) 100%), url('https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/fond%20%C3%A9cran%20-%20paysage%20cascade%20for%C3%AAt.png') center / cover no-repeat" }}>
         <div className="hero-bg"></div>
         <div className="wrap">
           <span className="kicker">Gouvernance · Équipe · Confiance</span>
