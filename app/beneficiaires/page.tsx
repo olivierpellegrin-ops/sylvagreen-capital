@@ -12,7 +12,7 @@ const CDN = "https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital
 export default function Beneficiaires() {
   return (
     <main className="page-beneficiaires">
-      <div className="hero" id="top" style={{ backgroundImage: "linear-gradient(160deg, rgba(36, 60, 44, 0.9) 0%, rgba(74, 107, 82, 0.6) 50%, rgba(36, 60, 44, 0.86) 100%), url('https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/broyage%20de%20plaquettes%20foresti%C3%A8res.jpeg') center / cover no-repeat" }}>
+      <div className="hero" id="top" style={{ background: "linear-gradient(160deg, rgba(36, 60, 44, 0.9) 0%, rgba(74, 107, 82, 0.6) 50%, rgba(36, 60, 44, 0.86) 100%), url('https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/fond%20%C3%A9cran%20-%20for%C3%AAt%20sapins%20rivi%C3%A8re.png') center / cover no-repeat" }}>
         <div className="hero-bg"></div>
         <div className="wrap">
           <span className="kicker">Scieries · Usines de granulés · Équipements</span>
