@@ -14,7 +14,7 @@ export default function Investisseurs() {
         <div className="hero-bg"></div>
         <div className="wrap">
           <span className="kicker">Investisseurs · Rendement · Niche filière bois</span>
-          <h1>Investir dans une niche que les fonds généralistes n&apos;adressent pas</h1>
+          <h1>Investir au cœur de la filière bois, du capital à l&apos;équipement</h1>
           <p className="lead">
             Un rendement brut annuel minimum de 12 % visé, des revenus récurrents dès la première
             année, et des actifs que nous comprenons techniquement : scieries, connexes,
