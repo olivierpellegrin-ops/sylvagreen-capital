@@ -40,7 +40,7 @@ export default function Investisseurs() {
           <p className="lead" style={{ marginTop: 16 }}>
             <strong>Mais les scieries manquent de capitaux.</strong> Séchoirs vétustes, broyeurs
             obsolètes, connexes sous-valorisés : la première transformation sous-investit, quand les
-            granuleurs cherchent une ressource locale sécurisée. <strong>Notre objectif :</strong>{" "}
+            granulateurs cherchent une ressource locale sécurisée. <strong>Notre objectif :</strong>{" "}
             mieux valoriser les connexes des scieries — sciures, copeaux, délignage — au profit des
             producteurs de granulés. <strong>Notre mission :</strong> financer la modernisation,
             l&apos;innovation et la valorisation de la première transformation du bois.
@@ -107,7 +107,7 @@ export default function Investisseurs() {
               <h3>Prises de capitaux</h3>
               <span className="tag">Capital · Croissance · Transmission</span>
               <p>
-                Entrée minoritaire ou majoritaire au capital des scieries, granuleurs et
+                Entrée minoritaire ou majoritaire au capital des scieries, granulateurs et
                 industriels de la filière : 12 %/an de rendement brut visé, horizon de 5 ans par
                 vintage, y compris pour la transmission d&apos;entreprises familiales.
               </p>
