@@ -20,23 +20,12 @@ export default function Home() {
       <section id="cibles">
         <div className="wrap">
           <span className="kicker">Deux promesses, un même fonds</span>
-          <h2>Quel est votre projet ? Investir ou financer ?</h2>
+          <h2>Vous êtes…</h2>
           <p className="lead">
             Un même fonds, une même équipe, une même conviction : la filière bois française
             mérite des capitaux patients et compétents. Choisissez votre porte.
           </p>
           <div className="doors">
-            <div className="door door-ben">
-              <span className="door-label">Scieries · Usines de granulés</span>
-              <h3>Vous dirigez un outil industriel de la filière</h3>
-              <p>
-                Financez séchoirs, broyeurs, presses à granulés et chaudières biomasse sans
-                immobiliser votre trésorerie et sans vous déposséder de votre entreprise.
-              </p>
-              <Link className="btn btn-primary" href="/beneficiaires">
-                Je cherche un financement
-              </Link>
-            </div>
             <div className="door door-inv">
               <span className="door-label">Investisseurs</span>
               <h3>Vous souhaitez investir dans la filière bois</h3>
@@ -46,6 +35,17 @@ export default function Home() {
               </p>
               <Link className="btn btn-ghost" href="/investisseurs">
                 Je souhaite investir
+              </Link>
+            </div>
+            <div className="door door-ben">
+              <span className="door-label">Scieries · Usines de granulés</span>
+              <h3>Vous dirigez un outil industriel de la filière</h3>
+              <p>
+                Financez séchoirs, broyeurs, presses à granulés et chaudières biomasse sans
+                immobiliser votre trésorerie et sans vous déposséder de votre entreprise.
+              </p>
+              <Link className="btn btn-primary" href="/beneficiaires">
+                Je cherche un financement
               </Link>
             </div>
           </div>
