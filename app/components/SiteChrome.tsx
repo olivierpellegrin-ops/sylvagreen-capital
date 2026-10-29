@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MobileNav from "./MobileNav";
 
 export const LOGO =
   "https://cdn.jsdelivr.net/gh/olivierpellegrin-ops/sylvagreen-capital@main/SylvaGreen%20Capital%20-%20horizontal.png";
@@ -26,6 +27,7 @@ export function Header() {
             Prendre rendez-vous
           </a>
         </nav>
+        <MobileNav />
       </div>
     </header>
   );
