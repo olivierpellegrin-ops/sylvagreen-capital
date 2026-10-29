@@ -35,6 +35,19 @@
  #zoomhint { position: absolute; left: 12px; top: 12px; font-size: .68rem; color: #55665a; background: rgba(255,255,255,.8); padding: 3px 8px; border-radius: 6px; }
  .legend { position: absolute; left: 12px; bottom: 12px; background: rgba(255,255,255,.92); border-radius: 8px; padding: 8px 12px; font-size: .72rem; box-shadow: 0 2px 8px rgba(0,0,0,.12); }
  .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+ @media (max-width: 760px) {
+  body { height: auto; min-height: 100vh; overflow: auto; }
+  header { padding: 8px 12px; gap: 10px; }
+  header h1 { font-size: .95rem; }
+  main { flex-direction: column; }
+  #mapwrap { order: 1; height: 56vh; min-height: 320px; flex: none; }
+  #side { order: 2; width: 100%; min-width: 0; border-right: none; border-top: 1px solid #dde5dd; }
+  #list { max-height: 42vh; }
+  #detail { right: 8px; left: 8px; top: auto; bottom: 8px; width: auto; max-height: 52vh; overflow-y: auto; }
+  #tooltip { font-size: .8rem; }
+  .legend { font-size: .68rem; padding: 6px 10px; }
+  svg#map { touch-action: none; }
+ }
 </style>
 </head>
 <body>
@@ -446,6 +459,42 @@ function point(e){ const r = svg.getBoundingClientRect();
 let drag = null;
 svg.addEventListener('mousedown', e => { drag = {sx:e.clientX, sy:e.clientY, vx:vb.x, vy:vb.y}; svg.style.cursor='grabbing'; });
 window.addEventListener('mouseup', () => { drag = null; svg.style.cursor='grab'; });
+
+// ---- tactile : pan à 1 doigt, zoom pincé à 2 doigts ----
+let tpan = null, pinch = null;
+function tpt(t){ const r = svg.getBoundingClientRect();
+  return { x: vb.x + (t.clientX - r.left) / r.width * vb.w, y: vb.y + (t.clientY - r.top) / r.height * vb.h }; }
+svg.addEventListener('touchstart', e => {
+  if (e.touches.length === 1) {
+    const t = e.touches[0];
+    tpan = { sx: t.clientX, sy: t.clientY, vx: vb.x, vy: vb.y }; pinch = null;
+  } else if (e.touches.length === 2) {
+    const a = e.touches[0], b = e.touches[1];
+    const mid = tpt({ clientX: (a.clientX + b.clientX) / 2, clientY: (a.clientY + b.clientY) / 2 });
+    pinch = { d0: Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY), w0: vb.w, midX: mid.x, midY: mid.y };
+    tpan = null;
+  }
+}, { passive: true });
+svg.addEventListener('touchmove', e => {
+  if (pinch && e.touches.length === 2) {
+    e.preventDefault();
+    const a = e.touches[0], b = e.touches[1];
+    const d = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
+    const r = svg.getBoundingClientRect();
+    let nw = Math.max(40, Math.min(800, pinch.w0 * pinch.d0 / Math.max(20, d)));
+    let nx = pinch.midX - (((a.clientX + b.clientX) / 2) - r.left) / r.width * nw;
+    let ny = pinch.midY - (((a.clientY + b.clientY) / 2) - r.top) / r.height * nw;
+    nx = Math.max(0, Math.min(800 - nw, nx)); ny = Math.max(0, Math.min(800 - nw, ny));
+    vb = { x: nx, y: ny, w: nw, h: nw }; applyVB();
+  } else if (tpan && e.touches.length === 1) {
+    e.preventDefault();
+    const t = e.touches[0]; const r = svg.getBoundingClientRect();
+    vb.x = Math.max(0, Math.min(800 - vb.w, tpan.vx - (t.clientX - tpan.sx) / r.width * vb.w));
+    vb.y = Math.max(0, Math.min(800 - vb.h, tpan.vy - (t.clientY - tpan.sy) / r.height * vb.h));
+    applyVB();
+  }
+}, { passive: false });
+svg.addEventListener('touchend', e => { if (e.touches.length === 0) { tpan = null; pinch = null; } }, { passive: true });
 window.addEventListener('mousemove', e => { if(!drag) return; const r = svg.getBoundingClientRect();
   vb.x = Math.max(0, Math.min(800 - vb.w, drag.vx - (e.clientX - drag.sx) / r.width * vb.w));
   vb.y = Math.max(0, Math.min(800 - vb.h, drag.vy - (e.clientY - drag.sy) / r.height * vb.h)); applyVB(); });
